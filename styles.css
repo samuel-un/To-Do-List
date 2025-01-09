@@ -1,0 +1,254 @@
+/* Estilos generales */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 60px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.light-theme .container {
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #bb86fc;
+}
+
+body.light-theme header h1 {
+    color: #6200ea;
+}
+
+#themeToggle {
+    background-color: #bb86fc;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+body.light-theme #themeToggle {
+    background-color: #6200ea;
+}
+
+/* Formulario de creación de tareas */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.todo-form input,
+.todo-form select,
+.todo-form button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+body.light-theme .todo-form input,
+body.light-theme .todo-form select {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.todo-form input[type="text"] {
+    flex: 1;
+    min-width: 150px;
+}
+
+.todo-form button {
+    background-color: #bb86fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+body.light-theme .todo-form button {
+    background-color: #6200ea;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.filters input {
+    flex: 1;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+body.light-theme .filters input {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.filters button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+body.light-theme .filters button {
+    background-color: #7c4dff;
+}
+
+/* Lista de tareas */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+body.light-theme .todo-list li {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.todo-list li .task-content {
+    flex: 1;
+    margin-right: 20px;
+    word-wrap: break-word;
+}
+
+.todo-list li .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-list li button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list li button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.todo-list li.completed {
+    text-decoration: line-through;
+    background-color: #444;
+    color: #bbb;
+}
+
+.completed-text {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+body.light-theme .completed-text {
+    color: #999;
+}
+
+/* Estadísticas */
+#stats {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+#deleteAllButton {
+    display: block;
+    margin: 30px auto;
+    width: 110px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+body.light-theme #deleteAllButton {
+    background-color: #7c4dff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+body.light-theme footer {
+    color: #999;
+}

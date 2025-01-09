@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Encabezado -->
+        <header>
+            <h1>Todo List</h1>
+            <button id="themeToggle">Modo claro</button>
+        </header>
+
+        <main>
+            <!-- Creación de tareas -->
+            <section class="task-creation">
+                <form id="todoForm" class="todo-form">
+                    <input
+                        type="text"
+                        id="todoInput"
+                        placeholder="Añadir una tarea ..."
+                        maxlength="29"
+                        required
+                    />
+                    <input type="date" name="dateTodo" id="dateTodo" />
+                    <select id="categoryInput">
+                        <option value="Personal">Personal</option>
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <button type="submit">+</button>
+                </form>
+            </section>
+
+            <!-- Filtros -->
+            <section class="task-filters">
+                <div class="filters">
+                    <button id="sortByDate">Ordenar por fecha</button>
+                    <button id="sortByName">Ordenar por Nombre</button>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Buscar tarea..."
+                    />
+                </div>
+            </section>
+
+            <!-- Lista de tareas -->
+            <section class="task-list">
+                <ul id="todoList" class="todo-list"></ul>
+                <button id="deleteAllButton">Borrar todo</button>
+                <div id="stats">
+                    <p>
+                        Tareas pendientes: <span id="pendingCount">0</span>
+                    </p>
+                    <p>
+                        Tareas completadas: <span id="completedCount">0</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Created by Samuel UN</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
