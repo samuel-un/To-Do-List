@@ -1,91 +1,96 @@
-# To do List
+# ✅ To-Do List App
 
-[Web Preview](https://samuel-un.github.io/To-Do-List/)
-
-### Description
-
-**Todo List App** is a project designed to help users manage tasks in a simple and efficient way. Users can add, edit, mark as complete, delete, and search for tasks. The app also includes sorting filters and a light/dark mode toggle for an enhanced visual experience.
+[🌐 Web Preview](https://samuel-un.github.io/To-Do-List/)
 
 ---
 
-### Table of Contents
+## 📖 Description
 
--   [Owner](#owner)
--   [Features](#features)
--   [Screenshots](#screenshots)
--   [Technologies](#technologies)
--   [Methodology](#methodology)
--   [Usage](#usage)
--   [Next Steps](#next-steps)
--   [License](#license)
+**To-Do List App** is a simple yet powerful project designed to help users manage daily tasks efficiently.  
+It allows adding, editing, completing, deleting, and searching tasks, with extra features like filters and a **Light/Dark mode toggle** for a personalized user experience.
 
 ---
 
-### Owner
+## 📑 Table of Contents
 
--   Samuel UN [GitHub](https://github.com/samuel-un)
-
----
-
-### Features
-
--   Add and manage tasks with details (text, date, category).
--   Responsive interface with light/dark mode support.
-
----
-
-### Screenshots
-
-#### Dark Mode 
-![screenshot1](https://raw.githubusercontent.com/samuel-un/To-Do-List/main/images/captura-dark-mode.png)
-
-#### Light Mode 
-![screenshot2](https://raw.githubusercontent.com/samuel-un/To-Do-List/main/images/captura-light-mode.png)
-
-#### Extra Features in Light Mode
-![screenshot3](https://raw.githubusercontent.com/samuel-un/To-Do-List/main/images/captura-light-mode-extra.png)
+- [Owner](#owner)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Acknowledgements](#acknowledgements)
+- [Methodology](#methodology)
+- [Usage](#usage)
+- [License](#license)
 
 ---
 
+## 👤 Owner
 
-### Technologies
-
--   **Frontend**: HTML5, CSS3, JavaScript.
--   **Libraries**: SweetAlert2.
--   **Version Control**: Git and GitHub.
+- Samuel Utrilla Núñez — [GitHub Profile](https://github.com/samuel-un)
 
 ---
 
-### Acknowledgements  
-- Alertas interactivas proporcionadas por [SweetAlert2](https://sweetalert2.github.io/).  
+## ✨ Features
+
+- Add, edit, mark as complete, and delete tasks.  
+- Search bar to quickly filter tasks.  
+- Sorting by category or date.  
+- Responsive design for desktop and mobile.  
+- **Light/Dark mode toggle** for a modern look.  
+- Interactive alerts and confirmations (SweetAlert2).  
 
 ---
 
+## 📸 Screenshots
 
-### Methodology
+### Dark Mode
+![Dark Mode](https://raw.githubusercontent.com/samuel-un/To-Do-List/main/images/captura-dark-mode.png)
 
-The project was developed using the following steps:
+### Light Mode
+![Light Mode](https://raw.githubusercontent.com/samuel-un/To-Do-List/main/images/captura-light-mode.png)
 
-1. **Design & Research**: Planning the user interface and required features.
-2. **Development**: Implementing functionality using HTML, CSS, and JavaScript.
-3. **Testing & Optimization**: Ensuring cross-browser and device compatibility.
-4. **Maintenance**: Performance optimization and bug fixing.
+### Extra Features in Light Mode
+![Extra Features](https://raw.githubusercontent.com/samuel-un/To-Do-List/main/images/captura-light-mode-extra.png)
 
 ---
 
-### Usage
+## 🛠️ Technologies
 
-To clone and use this project:
+- **Frontend**: HTML5, CSS3, JavaScript (ES6).  
+- **Libraries**: [SweetAlert2](https://sweetalert2.github.io/) for interactive alerts.  
+- **Version Control**: Git + GitHub.  
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/samuel-un/To-Do-List
-   ```
-2. **Navigate to the project directory**:
-   ```bash
-   cd To-Do-List
-   ```
-3. **Open `index.html` in your browser**.
+---
+
+## 🙌 Acknowledgements
+
+- UI alerts and confirmations powered by **SweetAlert2**.
+
+---
+
+## 🔧 Methodology
+
+1. **Planning & Design** → UI layout and feature definition.  
+2. **Development** → Implementation with HTML, CSS, and JS.  
+3. **Testing & Optimization** → Compatibility across devices and browsers.  
+4. **Maintenance** → Continuous improvements and bug fixes.  
+
+---
+
+## ▶️ Usage
+
+Clone and run locally:
+
+```bash
+# Clone repository
+git clone https://github.com/samuel-un/To-Do-List
+
+# Navigate into project
+cd To-Do-List
+
+# Open directly in your browser
+index.html
+```
 
 ---
 
