@@ -1,13 +1,14 @@
 # ✅ To-Do List App
-
-[🌐 Web Preview](https://samuel-un.github.io/To-Do-List/)
-
----
-
 ## 📖 Description
 
 **To-Do List App** is a simple yet powerful project designed to help users manage daily tasks efficiently.  
 It allows adding, editing, completing, deleting, and searching tasks, with extra features like filters and a **Light/Dark mode toggle** for a personalized user experience.
+
+---
+
+## 🚀 Live Demo
+
+**GitHub Pages:** [🌐 Web Preview](https://samuel-un.github.io/To-Do-List/)
 
 ---
 
